@@ -2,9 +2,9 @@ $burgerMQ: em(992);
 
 .burger {
   $width: 2.5rem;
-  $height: 2rem;
-  $bgColor: hsl(0deg 0% 0%);
-  $burgerLineHeight: 0.4rem;
+  $height: 1.8rem;
+  $bgColor: #fff;
+  $burgerLineHeight: 0.2rem;
 
   display: none;
 
@@ -12,6 +12,7 @@ $burgerMQ: em(992);
     position: relative;
     z-index: 15;
     display: block;
+    margin-bottom: auto;
     width: $width;
     height: $height;
     background-color: transparent;
@@ -45,12 +46,14 @@ $burgerMQ: em(992);
     &--active {
       &::before {
         top: 0.8rem;
+        background-color: var(--clr-default-900);
         transform: rotate(45deg);
         transition: transform var(--transition), top var(--transition);
       }
 
       &::after {
         bottom: 0.8rem;
+        background-color: var(--clr-default-900);
         transform: rotate(-45deg);
         transition: transform var(--transition), bottom var(--transition);
       }

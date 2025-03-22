@@ -1,6 +1,42 @@
 .header {
+  z-index: 5;
+  padding-top: 2rem;
+  min-height: 14rem;
+
   &__wrapper {
     display: flex;
     align-items: center;
+    gap: 1rem;
+  }
+
+  &__contact {
+    gap: 4.5rem;
+
+    &-right {
+      gap: 1.5rem;
+    }
+
+    @media (max-width: em(992)) {
+      display: none;
+    }
+  }
+
+  &__tell {
+    gap: 1rem;
+
+    .text {
+      color: var(--clr-default-100);
+    }
+  }
+
+  &__whatsapp {
+    padding: 0.8rem;
+    min-height: 4rem;
+  }
+
+  &__button {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    min-height: 4rem;
   }
 }
