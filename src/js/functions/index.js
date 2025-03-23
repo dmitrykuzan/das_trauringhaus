@@ -10,3 +10,4 @@ export * from "./mobile-check";
 export * from "./modal";
 export * from "./tabs";
 export * from "./validate-forms";
+export * from "./slideCount";

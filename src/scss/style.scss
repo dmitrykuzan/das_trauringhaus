@@ -19,14 +19,14 @@
 // </ОБНУЛЕНИЕ>===============================================================
 
 // <ПЕРЕМЕННЫЕ>===============================================================
-$containerWidth: 123rem;
+$containerWidth: 114rem;
 
 :root {
   // base
   --font-family: "Inter", sans-serif;
   --font-weight: 400;
   --content-width: 112rem;
-  --container-offset: 1.5rem;
+  --container-offset: 1rem;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --transition: 0.3s;
 
@@ -113,6 +113,10 @@ main {
   max-width: var(--container-width);
 }
 
+//Libs
+@import "./libs/swiper";
+//Libs
+
 // Components - UI
 @import "./ui";
 @import "./stack";
@@ -135,6 +139,9 @@ main {
 
 // Components - Pages
 @import "./components/indexPage/hero";
+@import "./components/indexPage/product";
+@import "./components/indexPage/benefits";
+@import "./components/indexPage/gallery";
 
 // Components - Pages
 
