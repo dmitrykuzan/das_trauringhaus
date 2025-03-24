@@ -1,0 +1,86 @@
+.modal-application {
+  &__content {
+    gap: 3rem;
+
+    @media (max-width: em(1023)) {
+      gap: 2rem;
+    }
+  }
+
+  &__form {
+    gap: 3rem;
+
+    @media (max-width: em(1023)) {
+      gap: 2rem;
+    }
+  }
+
+  &__text {
+    gap: 1.4rem;
+
+    h2 {
+      padding-right: 2rem;
+      font-family: DINPro, sans-serif;
+      font-size: fluid-font(2.5rem, 2.2rem);
+      line-height: 140%;
+      color: var(--clr-typography-700);
+    }
+
+    p {
+      line-height: 160%;
+      color: var(--clr-typography-600);
+    }
+  }
+
+  &__fields {
+    gap: 2rem;
+  }
+
+  &__date {
+    position: relative;
+
+    input {
+      padding-left: 15rem;
+      cursor: pointer;
+
+      @media (max-width: em(575)) {
+        padding-left: 2rem;
+      }
+    }
+
+    .icon {
+      position: absolute;
+      right: 1.7rem;
+      top: 50%;
+      z-index: -1;
+      width: 2.6rem;
+      height: 2.6rem;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      content: "Terminwunsch";
+      position: absolute;
+      left: 2rem;
+      top: 50%;
+      z-index: -1;
+      font-size: 1.6rem;
+      color: var(--clr-typography-600);
+      transform: translateY(-50%);
+
+      @media (max-width: em(575)) {
+        left: 0;
+        top: -2rem;
+        color: var(--clr-typography-400);
+      }
+    }
+
+    @media (max-width: em(575)) {
+      margin-top: 2rem;
+    }
+  }
+
+  &__button {
+    max-width: initial;
+  }
+}

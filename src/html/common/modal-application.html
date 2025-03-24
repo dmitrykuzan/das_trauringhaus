@@ -1,0 +1,91 @@
+<div class="modal modal-application">
+  <div class="modal__wrapper">
+    <div class="modal__content">
+      <button class="modal__close" aria-label="Close modal window"></button>
+      <div class="modal-application__content stack column">
+        <div class="modal-application__text stack column">
+          <h2>Beratungsgespräch vereinbahren</h2>
+          <p>
+            Hinterlassen Sie uns Ihre Kontaktdaten und Ihren Wunschtermin. Wir
+            werden uns umgehend bei Ihnen melden.
+          </p>
+        </div>
+
+        <form class="modal-application__form stack column">
+          <div class="modal-application__fields stack column">
+            <div class="input">
+              <input type="text" name="name" placeholder="Name" />
+            </div>
+            <div class="input">
+              <input type="text" name="mobile" placeholder="Telefon" />
+            </div>
+            <div class="input">
+              <input type="email" name="mobile" placeholder="E-Mail" />
+            </div>
+            <div class="input modal-application__date">
+              <input
+                type="text"
+                class="calendar"
+                placeholder="Date: __ __ __"
+              />
+
+              <span class="icon">
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.04336 5.79698V2.6001M17.966 5.79698V2.6001M2.59961 9.24173V5.19854C2.59961 4.64626 3.04732 4.19854 3.59961 4.19854H8.04336H17.966H22.3996C22.9519 4.19854 23.3996 4.64625 23.3996 5.19854V9.24173M2.59961 9.24173V22.4001C2.59961 22.9524 3.04732 23.4001 3.59961 23.4001H22.3996C22.9519 23.4001 23.3996 22.9524 23.3996 22.4001V9.24173M2.59961 9.24173H23.3996M7.14961 13.2752H8.84919M12.3496 13.2752H14.0492M17.0621 13.2752H18.7617M7.14961 18.8501H8.84919M12.3496 18.8501H14.0492M17.0621 18.8501H18.7617"
+                    stroke="#425C98"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <div class="checkbox">
+            <label class="checkbox-label stack">
+              <input
+                id="checkbox-time"
+                class="checkbox-input"
+                type="checkbox"
+                name="checkbox"
+              />
+              <span class="checkbox-fake stack center">
+                <svg
+                  width="12"
+                  height="9"
+                  viewBox="0 0 12 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.999374 4L4.21258 7.2132L10.4258 1"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <span class="checkbox-text"
+                >Mit dem Absenden Ihrer Anfrage erklären Sie sich mit der
+                Verarbeitung Ihrer angegebenen Daten zum Zweck der Bearbeitung
+                Ihrer Anfrage einverstanden. Zur Datenschutzerklärung</span
+              >
+            </label>
+          </div>
+          <button
+            type="submit"
+            class="modal-application__button button button--gold"
+          >
+            Termin buchen
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

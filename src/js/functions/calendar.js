@@ -8,21 +8,21 @@ export const calendar = () => {
   }
 
   datepicker(calendarSelector, {
-    customDays: ["PN", "VT", "SR", "Чт", "Пт", "Сб", "Сб"],
-    customMonths: [
-      "Январь",
-      "Февраль",
-      "Март",
-      "Апрель",
-      "Май",
-      "Июнь",
-      "Июль",
-      "Август",
-      "Сентябрь",
-      "Октябрь",
-      "Ноябрь",
-      "Декабрь",
-    ],
+    // customDays: ["PN", "VT", "SR", "Чт", "Пт", "Сб", "Сб"],
+    // customMonths: [
+    //   "Январь",
+    //   "Февраль",
+    //   "Март",
+    //   "Апрель",
+    //   "Май",
+    //   "Июнь",
+    //   "Июль",
+    //   "Август",
+    //   "Сентябрь",
+    //   "Октябрь",
+    //   "Ноябрь",
+    //   "Декабрь",
+    // ],
     formatter: (input, date, instance) => {
       const value = date.toLocaleDateString();
       input.value = value; // => '1/1/2099'

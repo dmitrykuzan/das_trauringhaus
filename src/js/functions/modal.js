@@ -75,7 +75,11 @@ export const modals = () => {
     }
   }
 
-  // bindModal(".button", ".modal-page", ".modal__close");
+  bindModal(
+    ".modal-application-trigger",
+    ".modal-application",
+    ".modal__close"
+  );
 
   // функция для показа модального окна через какое-то определенное время
   function showModalByTime(selector, time) {
