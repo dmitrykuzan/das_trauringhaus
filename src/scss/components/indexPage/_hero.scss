@@ -28,6 +28,10 @@
     @media (max-width: em(1580)) {
       padding-top: 17rem;
     }
+
+    @media (max-width: em(575)) {
+      padding-top: 20rem;
+    }
   }
 
   &__content {

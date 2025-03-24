@@ -23,6 +23,7 @@ $overlayBgColor: rgba(26, 37, 62, 0.8);
 
   &__content {
     position: relative;
+    border-radius: 0.5rem;
     padding: 4rem;
     width: 100%;
     max-width: 60rem;
@@ -32,7 +33,10 @@ $overlayBgColor: rgba(26, 37, 62, 0.8);
     transition: transform var(--transition), opacity var(--transition);
 
     @media (max-width: em(1023)) {
-      padding: 2rem;
+      padding-top: 2rem;
+      padding-right: 1rem;
+      padding-bottom: 2rem;
+      padding-left: 1rem;
     }
   }
 

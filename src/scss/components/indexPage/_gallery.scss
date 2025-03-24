@@ -67,10 +67,19 @@
       margin-top: 0.3rem;
       padding-right: 1rem;
       padding-left: 1rem;
+
       .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         img {
           width: 100%;
           height: 100%;
+        }
+
+        &.swiper-slide-thumb-active {
+          border: 0.1rem solid var(--clr-accent-500);
         }
       }
     }
