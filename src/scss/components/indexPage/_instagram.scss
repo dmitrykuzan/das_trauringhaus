@@ -1,0 +1,39 @@
+.instagram {
+  padding-top: 8rem;
+
+  &__wrapper {
+    gap: 3rem;
+  }
+
+  &__vidget {
+    @media (max-width: em(992)) {
+      display: none;
+    }
+
+    &-mobile {
+      display: none;
+      @media (max-width: em(992)) {
+        display: block;
+      }
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    @media (max-width: em(992)) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: em(575)) {
+      gap: 0.5rem;
+    }
+  }
+
+  @media (max-width: em(992)) {
+    padding-top: 5rem;
+  }
+}
