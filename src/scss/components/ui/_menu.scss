@@ -18,6 +18,17 @@ $burgerMQ: em(992);
       line-height: 160%;
       color: var(--clr-default-100);
 
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -0.4rem;
+        width: 0;
+        height: 0.2rem;
+        background-color: var(--clr-accent-hover-500);
+        transition: width var(--transition);
+      }
+
       &::before {
         content: "";
         position: absolute;
@@ -28,6 +39,13 @@ $burgerMQ: em(992);
         height: 0.7rem;
         background-color: var(--clr-typography-700);
         transform: translateY(-50%);
+      }
+
+      @media (hover) {
+        &:hover::after {
+          width: 100%;
+          transition: width var(--transition);
+        }
       }
 
       @media (max-width: $burgerMQ) {
@@ -77,6 +95,7 @@ $burgerMQ: em(992);
 
   &__mobile-content {
     margin-top: auto;
+    padding-top: 2rem;
     gap: 3rem;
   }
 
@@ -103,7 +122,7 @@ $burgerMQ: em(992);
   }
 
   &__mobile-socials {
-    gap: 2.5rem;
+    gap: 1.5rem;
   }
 
   &__mobile-social {

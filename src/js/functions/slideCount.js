@@ -11,7 +11,7 @@ export const SlideCount = () => {
 
       const countElement = card.querySelector(".gallery__item-count");
       if (countElement) {
-        countElement.textContent = `+${slideCount}`;
+        countElement.textContent = `+${slideCount - 10}`;
       }
     }
   });

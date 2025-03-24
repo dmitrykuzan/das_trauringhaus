@@ -32,11 +32,26 @@
   &__whatsapp {
     padding: 0.8rem;
     min-height: 4rem;
+
+    .icon {
+      opacity: 0.5;
+      transition: opacity var(--transition);
+    }
+
+    &:hover {
+      .icon {
+        opacity: 1;
+      }
+    }
   }
 
   &__button {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
     min-height: 4rem;
+  }
+
+  @media (max-width: em(1580)) {
+    padding-top: 1rem;
   }
 }

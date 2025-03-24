@@ -18,6 +18,24 @@
 
   &--blue {
     background-color: var(--clr-accent-400);
+    transition: background-color var(--transition);
+
+    .text {
+      opacity: 0.5;
+      transition: opacity var(--transition);
+    }
+
+    &:hover {
+      background-color: var(--clr-accent-hover-400);
+
+      .text {
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      background-color: #425c98;
+    }
   }
 
   &--gold {
@@ -29,5 +47,14 @@
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     background-color: var(--clr-accent-500);
+    transition: background-color var(--transition);
+
+    &:hover {
+      background-color: var(--clr-accent-hover-500);
+    }
+
+    &:active {
+      background-color: #af935f;
+    }
   }
 }

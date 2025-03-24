@@ -24,8 +24,27 @@
 
     &-item {
       a {
+        position: relative;
         line-height: 160%;
         color: var(--clr-default-100);
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -0.4rem;
+          width: 0;
+          height: 0.2rem;
+          background-color: var(--clr-accent-hover-500);
+          transition: width var(--transition);
+        }
+
+        @media (hover) {
+          &:hover::after {
+            width: 100%;
+            transition: width var(--transition);
+          }
+        }
       }
     }
 
@@ -124,9 +143,22 @@
     transition: background-color var(--transition);
     cursor: pointer;
 
+    a {
+      svg {
+        opacity: 0.5;
+        transition: opacity var(--transition);
+      }
+    }
+
     @media (hover) {
       &:hover {
         background-color: rgba(126, 133, 161, 0.3);
+
+        a {
+          svg {
+            opacity: 1;
+          }
+        }
       }
     }
   }
@@ -174,6 +206,15 @@
   &__info-link {
     a {
       color: var(--clr-typography-400);
+      transition: color var(--transition);
+    }
+
+    @media (hover) {
+      &:hover {
+        a {
+          color: var(--clr-default-100);
+        }
+      }
     }
   }
 

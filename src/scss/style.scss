@@ -49,6 +49,9 @@ $containerWidth: 114rem;
 
   --clr-accent-400: #425c98;
   --clr-accent-500: #af935f;
+
+  --clr-accent-hover-400: #5c78b8;
+  --clr-accent-hover-500: #a68547;
 }
 
 // </ПЕРЕМЕННЫЕ>==============================================================
@@ -145,6 +148,7 @@ main {
 @import "./components/indexPage/gallery";
 @import "./components/indexPage/specialist";
 @import "./components/indexPage/instagram";
+@import "./components/indexPage/info";
 
 // Components - Pages
 

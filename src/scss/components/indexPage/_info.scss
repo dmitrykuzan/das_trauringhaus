@@ -1,0 +1,118 @@
+.info {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+
+  &__wrapper {
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  &__social {
+    padding-left: 10rem;
+    gap: 13rem;
+
+    &-list {
+      gap: 5rem;
+    }
+
+    &-link {
+      gap: 0.5rem;
+
+      .icon svg {
+        stroke: var(--clr-typography-500);
+        transition: stroke var(--transition);
+      }
+
+      .text {
+        font-size: 1.2rem;
+        line-height: 160%;
+        color: var(--clr-typography-500);
+        transition: color var(--transition);
+      }
+    }
+
+    &-item {
+      @media (hover) {
+        &:hover {
+          .info__social-link {
+            .icon svg {
+              stroke: var(--clr-typography-700);
+            }
+
+            .text {
+              color: var(--clr-typography-700);
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: em(1280)) {
+      padding-left: initial;
+    }
+
+    @media (max-width: em(992)) {
+      display: none;
+    }
+  }
+
+  &__text {
+    margin-left: auto;
+    max-width: 55.5rem;
+    gap: 2rem;
+
+    &-title {
+      font-family: DINPro, sans-serif;
+      font-weight: 700;
+      font-size: fluid-font(6rem, 4.5rem);
+      line-height: 110%;
+      color: var(--clr-typography-700);
+
+      span {
+        color: var(--clr-accent-500);
+      }
+    }
+
+    &-subtitle {
+      max-width: 42rem;
+      font-size: fluid-font(2rem, 1.8rem);
+      line-height: 160%;
+      color: var(--clr-default-900);
+    }
+
+    &-description {
+      gap: 2rem;
+
+      p {
+        line-height: 160%;
+      }
+    }
+
+    @media (max-width: em(1280)) {
+      margin-left: initial;
+    }
+
+    @media (max-width: em(992)) {
+      max-width: initial;
+    }
+  }
+
+  &__button {
+    @media (max-width: em(575)) {
+      max-width: initial;
+    }
+  }
+
+  &__banner {
+    max-width: 27rem;
+
+    @media (max-width: em(992)) {
+      display: none;
+    }
+  }
+
+  @media (max-width: em(992)) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}

@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  margin-top: -16rem;
+  margin-top: -15.9rem;
   height: 100vh;
 
   &__video {
@@ -23,11 +23,19 @@
   }
 
   &__wrapper {
-    padding-top: 23rem;
+    padding-top: 20rem;
+
+    @media (max-width: em(1580)) {
+      padding-top: 17rem;
+    }
   }
 
   &__content {
     gap: 3rem;
+
+    @media (max-width: em(1580)) {
+      gap: 1.5rem;
+    }
   }
 
   &__title {
@@ -90,6 +98,10 @@
     margin-top: auto;
     padding-bottom: 3rem;
     gap: 3rem;
+
+    @media (max-width: em(1580)) {
+      padding-top: 2rem;
+    }
   }
 
   &__location {
@@ -125,5 +137,14 @@
         transform: translateY(10px);
       }
     }
+  }
+
+  @media (max-width: em(1580)) {
+    margin-top: -14.9rem;
+    height: initial;
+  }
+
+  @media (max-width: em(575)) {
+    height: 100vh;
   }
 }
