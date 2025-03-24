@@ -52,6 +52,7 @@
   "dependencies": {
     "focus-visible": "^5.2.0",
     "fslightbox": "^3.5.1",
+    "js-datepicker": "^5.18.4",
     "swiper": "8.3.1"
   }
 }

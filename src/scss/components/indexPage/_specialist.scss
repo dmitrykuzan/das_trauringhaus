@@ -1,0 +1,122 @@
+.specialist {
+  padding-top: 8rem;
+
+  &__wrapper {
+    gap: 6rem;
+
+    @media (max-width: em(1460)) {
+      gap: 3rem;
+    }
+
+    @media (max-width: em(1023)) {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    max-width: 53rem;
+
+    &-mobile {
+      display: none;
+      margin-right: auto;
+      margin-left: auto;
+
+      @media (max-width: em(575)) {
+        display: block;
+      }
+    }
+
+    @media (max-width: em(1023)) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media (max-width: em(575)) {
+      display: none;
+    }
+  }
+
+  &__content {
+    max-width: 53rem;
+    gap: 3.2rem;
+
+    @media (max-width: em(1023)) {
+      max-width: initial;
+    }
+  }
+
+  &__title {
+    padding-bottom: 2.5rem;
+    font-family: DINPro, sans-serif;
+    font-size: fluid-font(9.5rem, 6rem);
+    line-height: 100%;
+    color: var(--clr-typography-700);
+
+    span {
+      position: relative;
+      padding-bottom: 2rem;
+      color: var(--clr-accent-400);
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0.1rem;
+        background-color: var(--clr-accent-500);
+      }
+    }
+
+    @media (max-width: em(575)) {
+      display: none;
+    }
+  }
+
+  &__subtitle {
+    font-size: fluid-font(2rem, 1.8rem);
+    line-height: 160%;
+    color: var(--clr-typography-600);
+  }
+
+  &__description {
+    gap: 1.5rem;
+
+    p {
+      line-height: 160%;
+    }
+  }
+
+  &__year {
+    gap: 3rem;
+
+    &-text {
+      align-items: center;
+      gap: 3rem;
+
+      p {
+        font-family: DINPro, sans-serif;
+        font-weight: 300;
+        font-size: fluid-font(3.5rem, 1.8rem);
+        line-height: 140%;
+        color: #858585;
+      }
+
+      @media (max-width: em(575)) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: initial;
+      }
+    }
+  }
+
+  &__button {
+    @media (max-width: em(575)) {
+      max-width: initial;
+    }
+  }
+
+  @media (max-width: em(575)) {
+    padding-top: 5rem;
+  }
+}

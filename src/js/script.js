@@ -4,7 +4,7 @@
 import "./_vendor";
 
 // Functions
-import { burger, mobileCheck, SlideCount } from "./functions/";
+import { burger, calendar, mobileCheck, SlideCount } from "./functions/";
 
 // Components
 import { gallerySlider } from "./components";
@@ -14,6 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
   burger();
   gallerySlider();
   SlideCount();
+  calendar();
 
   let fsLightboxLoaded = false;
 
