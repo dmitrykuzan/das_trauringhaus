@@ -16,6 +16,7 @@
   &__image {
     position: relative;
     flex-shrink: 0;
+    margin-top: auto;
     max-width: 53rem;
 
     &-decor {
@@ -149,7 +150,7 @@
         color: #858585;
       }
 
-      @media (max-width: em(575)) {
+      @media (max-width: em(1080)) {
         flex-direction: column;
         align-items: flex-start;
         gap: initial;

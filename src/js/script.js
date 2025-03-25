@@ -7,6 +7,7 @@ import "./_vendor";
 import {
   burger,
   calendar,
+  dynamicAdaptive,
   mobileCheck,
   modals,
   SlideCount,
@@ -22,6 +23,7 @@ window.addEventListener("DOMContentLoaded", () => {
   SlideCount();
   calendar();
   modals();
+  dynamicAdaptive();
 
   let fsLightboxLoaded = false;
 

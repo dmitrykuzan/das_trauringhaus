@@ -18,12 +18,12 @@
       background-color: var(--clr-default-100);
       transform: translateX(-50%);
 
-      @media (max-width: em(992)) {
+      @media (max-width: em(767)) {
         display: none;
       }
     }
 
-    @media (max-width: em(992)) {
+    @media (max-width: em(767)) {
       flex-direction: column;
       gap: 1rem;
     }

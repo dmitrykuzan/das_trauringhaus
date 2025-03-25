@@ -1,7 +1,6 @@
 export const gallerySlider = () => {
   let gallerySlider = new Swiper(".gallery__slider", {
     spaceBetween: 10,
-    freeMode: true,
     thumbs: {
       swiper: {
         spaceBetween: 4,

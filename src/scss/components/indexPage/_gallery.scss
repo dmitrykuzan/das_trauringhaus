@@ -4,12 +4,14 @@
   &__wrapper {
     gap: 1rem;
 
-    @media (max-width: em(992)) {
+    @media (max-width: em(1080)) {
       display: none;
     }
   }
 
   &__hide-image {
+    position: absolute;
+    visibility: hidden;
   }
 
   &__mobile {
@@ -44,7 +46,7 @@
   &__mobile {
     display: none;
 
-    @media (max-width: em(992)) {
+    @media (max-width: em(1080)) {
       display: flex;
     }
   }
